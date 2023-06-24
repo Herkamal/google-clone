@@ -1,6 +1,6 @@
 module.exports ={
   images: {
-    domains: ['www.pngwing.com']
+    domains: ['upload.wikimedia.org']
   },
 };
 
