@@ -1,881 +1,546 @@
 export default {
-  kind: "books#volumes",
-  totalItems: 2283,
+  kind: "customsearch#search",
+  url: {
+    type: "application/json",
+    template:
+      "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json",
+  },
+  queries: {
+    request: [
+      {
+        title: "Google Custom Search - hello world",
+        totalResults: "2810000000",
+        searchTerms: "hello world",
+        count: 10,
+        startIndex: 1,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "854f852f914db4447",
+      },
+    ],
+    nextPage: [
+      {
+        title: "Google Custom Search - hello world",
+        totalResults: "2810000000",
+        searchTerms: "hello world",
+        count: 10,
+        startIndex: 11,
+        inputEncoding: "utf8",
+        outputEncoding: "utf8",
+        safe: "off",
+        cx: "854f852f914db4447",
+      },
+    ],
+  },
+  context: {
+    title: "google",
+  },
+  searchInformation: {
+    searchTime: 0.185585,
+    formattedSearchTime: "0.19",
+    totalResults: "2810000000",
+    formattedTotalResults: "2,810,000,000",
+  },
   items: [
     {
-      kind: "books#volume",
-      id: "TGiOuQEACAAJ",
-      etag: "ENxiwwkmAIA",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/TGiOuQEACAAJ",
-      volumeInfo: {
-        title: "Hello World",
-        subtitle: "How to be Human in the Age of the Machine",
-        authors: ["Hannah Fry"],
-        publishedDate: "2019-02-22",
-        description:
-          "_______________ 'One of the best books yet written on data and algorithms. . .deserves a place on the bestseller charts.' (The Times) You are accused of a crime. Who would you rather determined your fate - a human or an algorithm? An algorithm is more consistent and less prone to error of judgement. Yet a human can look you in the eye before passing sentence. Welcome to the age of the algorithm, the story of a not-too-distant future where machines rule supreme, making important decisions - in healthcare, transport, finance, security, what we watch, where we go even who we send to prison. So how much should we rely on them? What kind of future do we want? Hannah Fry takes us on a tour of the good, the bad and the downright ugly of the algorithms that surround us. In Hello World she lifts the lid on their inner workings, demonstrates their power, exposes their limitations, and examines whether they really are an improvement on the humans they are replacing. A BBC RADIO 4- BOOK OF THE WEEK SHORTLISTED FOR THE 2018 BAILLIE GIFFORD PRIZE AND 2018 ROYAL SOCIETY SCIENCE BOOK PRIZE",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: '"Hello, World!" program - Wikipedia',
+      htmlTitle: "&quot;<b>Hello</b>, <b>World</b>!&quot; program - Wikipedia",
+      link: "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
+      displayLink: "en.wikipedia.org",
+      snippet:
+        'A "Hello, World!" program is generally a computer program that ignores any input, and outputs or displays a message similar to "Hello, World!".',
+      htmlSnippet:
+        "A &quot;<b>Hello</b>, <b>World</b>!&quot; program is generally a computer program that ignores any input, and outputs or displays a message similar to &quot;<b>Hello</b>, <b>World</b>!&quot;.",
+      cacheId: "UInCiDfJyeUJ",
+      formattedUrl: "https://en.wikipedia.org/wiki/%22Hello,_World!%22_program",
+      htmlFormattedUrl:
+        "https://en.wikipedia.org/wiki/%22<b>Hello</b>,_<b>World</b>!%22_program",
+      pagemap: {
+        metatags: [
           {
-            type: "ISBN_10",
-            identifier: "1784163066",
-          },
-          {
-            type: "ISBN_13",
-            identifier: "9781784163068",
+            referrer: "origin",
+            "og:image":
+              "https://upload.wikimedia.org/wikipedia/commons/2/21/Hello_World_Brian_Kernighan_1978.jpg",
+            "theme-color": "#eaecf0",
+            "og:image:width": "1200",
+            "og:type": "website",
+            viewport:
+              "width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0",
+            "og:title": '"Hello, World!" program - Wikipedia',
+            "og:image:height": "1315",
+            "format-detection": "telephone=no",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 0,
-        printType: "BOOK",
-        categories: ["Algorithms"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "preview-1.0.0",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=TGiOuQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=TGiOuQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=TGiOuQEACAAJ&dq=hello+world&hl=&cd=1&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=TGiOuQEACAAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World.html?hl=&id=TGiOuQEACAAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "NO_PAGES",
-        embeddable: false,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=TGiOuQEACAAJ&hl=&source=gbs_api",
-        accessViewStatus: "NONE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "_______________ &#39;One of the best books yet written on data and algorithms. . .deserves a place on the bestseller charts.&#39; (The Times) You are accused of a crime.",
       },
     },
     {
-      kind: "books#volume",
-      id: "IY3wDwAAQBAJ",
-      etag: "ZRnsxxAzbVw",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/IY3wDwAAQBAJ",
-      volumeInfo: {
-        title: "Hello World!",
-        authors: ["Kelly Corrigan"],
-        publisher: "Penguin",
-        publishedDate: "2021-04-20",
-        description:
-          "From New York Times bestselling author Kelly Corrigan comes a book that celebrates the people in our lives and the meaningful connections we make that come from asking each other questions. Hello World! is the perfect reminder that the journeys we take through life are all about the people we will meet along the way--people who will make us smarter, stronger, and more amazing than we ever thought possible. With her trademark inspirational wisdom, Kelly Corrigan writes the perfect book for anyone about to embark on a new adventure.",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World",
+      htmlTitle: "<b>Hello World</b>",
+      link: "https://helloworld.raspberrypi.org/",
+      displayLink: "helloworld.raspberrypi.org",
+      snippet:
+        "Hello World issue 21. How are you preparing young children for a digital world? This is the question this primary-teaching themed issue explores, ...",
+      htmlSnippet:
+        "<b>Hello World</b> issue 21. How are you preparing young children for a digital world? This is the question this primary-teaching themed issue explores,&nbsp;...",
+      cacheId: "POS2s4YXPC0J",
+      formattedUrl: "https://helloworld.raspberrypi.org/",
+      htmlFormattedUrl: "https://<b>helloworld</b>.raspberrypi.org/",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9780593206089",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "0593206088",
-          },
-        ],
-        readingModes: {
-          text: true,
-          image: true,
-        },
-        pageCount: 44,
-        printType: "BOOK",
-        categories: ["Juvenile Fiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "1.1.1.0.preview.3",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=IY3wDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=IY3wDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=IY3wDwAAQBAJ&pg=PP1&dq=hello+world&hl=&cd=2&source=gbs_api",
-        infoLink:
-          "https://play.google.com/store/books/details?id=IY3wDwAAQBAJ&source=gbs_api",
-        canonicalVolumeLink:
-          "https://play.google.com/store/books/details?id=IY3wDwAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "FOR_SALE",
-        isEbook: true,
-        listPrice: {
-          amount: 8.99,
-          currencyCode: "USD",
-        },
-        retailPrice: {
-          amount: 8.99,
-          currencyCode: "USD",
-        },
-        buyLink:
-          "https://play.google.com/store/books/details?id=IY3wDwAAQBAJ&rdid=book-IY3wDwAAQBAJ&rdot=1&source=gbs_api",
-        offers: [
-          {
-            finskyOfferType: 1,
-            listPrice: {
-              amountInMicros: 8990000,
-              currencyCode: "USD",
-            },
-            retailPrice: {
-              amountInMicros: 8990000,
-              currencyCode: "USD",
-            },
-            giftable: true,
+            src: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4BFDgXHEC2R-hxCPES9qrINsDJrXQBCMSxnbLAHJ_8wGNsqwdc1K_9_w",
+            width: "225",
+            height: "225",
           },
         ],
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World-sample-epub.acsm?id=IY3wDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        pdf: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World-sample-pdf.acsm?id=IY3wDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=IY3wDwAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "With her trademark inspirational wisdom, Kelly Corrigan writes the perfect book for anyone about to embark on a new adventure.",
+        metatags: [
+          {
+            "og:image":
+              "https://helloworld.raspberrypi.org/assets/helloworld/meta_image-1e940b77afe31f357ca27e518a38bec065ed86531f12dec73292828707b0ad62.png",
+            "twitter:card": "summary_large_image",
+            "twitter:title": "Hello World",
+            "og:type": "website",
+            "og:site_name": "Hello World",
+            "og:title": "Hello World",
+            "csrf-param": "authenticity_token",
+            "og:description": "For Computing and Digital Making Educators",
+            "twitter:creator": "@HelloWorld_Edu",
+            "twitter:image":
+              "https://helloworld.raspberrypi.org/assets/helloworld/meta_image-1e940b77afe31f357ca27e518a38bec065ed86531f12dec73292828707b0ad62.png",
+            "twitter:site": "@HelloWorld_Edu",
+            viewport: "width=device-width, initial-scale=1",
+            "csrf-token":
+              "DP5wVZyZ6pYh/LD0ZGeeFu4nrtKXn1HTLPT/Lm3aHLcUHgEYvCUZ8KgWUXB36/ewT8cSXH7LZMG+e2W/vva5HA==",
+            "og:locale": "en_GB",
+            "og:url": "https://helloworld.raspberrypi.org/",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://helloworld.raspberrypi.org/assets/helloworld/meta_image-1e940b77afe31f357ca27e518a38bec065ed86531f12dec73292828707b0ad62.png",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "bXcCDAAAQBAJ",
-      etag: "G/As6LsBGKk",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/bXcCDAAAQBAJ",
-      volumeInfo: {
-        title: "Hello, World! Solar System",
-        authors: ["Jill McDonald"],
-        publisher: "Doubleday Books for Young Readers",
-        publishedDate: "2016-03-08",
-        description:
-          "Learn from home and explore the world with these fun and easy board books! Every young child loves to look up at the moon in the night sky. Here’s a Hello, World! board book that can teach toddlers all about the sun, moon, stars, and planets—with colors, shapes, sizes, and super-simple facts. Hello, World! is a series designed to introduce first nonfiction concepts to babies and toddlers. Told in clear and easy terms and featuring bright, cheerful illustrations, Hello, World! makes learning fun for young children. And each sturdy page offers helpful prompts for engaging with your child. (“Can you point to the red planet? That’s Mars!”) It’s a perfect way to bring science and nature into the busy world of a toddler, where learning never stops. Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site • Rainforest Animals • Planet Earth • Reptiles • Cars and Trucks • Music • Baby Animals • On the Farm • Garden Time • Planes and Other Flying Machines • Rocks and Minerals • Snow",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World | Code.org",
+      htmlTitle: "<b>Hello World</b> | Code.org",
+      link: "https://code.org/helloworld",
+      displayLink: "code.org",
+      snippet:
+        'In Computer Science 101, the first program many students create is a simple one that outputs an iconic line of text: "Hello World!" Say hello to the world ...',
+      htmlSnippet:
+        "In Computer Science 101, the first program many students create is a simple one that outputs an iconic line of text: &quot;<b>Hello World</b>!&quot; Say hello to the world&nbsp;...",
+      cacheId: "TWg46TeXY_8J",
+      formattedUrl: "https://code.org/helloworld",
+      htmlFormattedUrl: "https://code.org/<b>helloworld</b>",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9780553521030",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "0553521039",
+            src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3ISD0H1ReEh2CCEWMdDQAeOtVTzO42YiWocPWa5Jnqq6z8_BYniiBtEk",
+            width: "310",
+            height: "163",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 26,
-        printType: "BOOK",
-        categories: ["Juvenile Nonfiction"],
-        averageRating: 5,
-        ratingsCount: 1,
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "0.2.0.0.preview.0",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=bXcCDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=bXcCDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=bXcCDAAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=3&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=bXcCDAAAQBAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World_Solar_System.html?hl=&id=bXcCDAAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=bXcCDAAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site ...",
+        metatags: [
+          {
+            "og:image":
+              "https://code.org/images/social-media/helloworld-og-image-1200x630.png",
+            "og:type": "article",
+            "twitter:title": "Hello World!",
+            "og:image:width": "1200",
+            "twitter:card": "summary_large_image",
+            "og:site_name": "Code.org",
+            "og:title": "Hello World!",
+            "og:image:height": "630",
+            "og:description":
+              "Choose from fun themes to code interactive characters in a world you create in this Hour of Code activity!",
+            "article:publisher": "https://www.facebook.com/Code.org",
+            "twitter:image:src":
+              "https://code.org/images/social-media/helloworld-og-image-1200x630.png",
+            "fb:app_id": "500177453358606",
+            viewport:
+              "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+            "twitter:description":
+              "Choose from fun themes to code interactive characters in a world you create in this Hour of Code activity",
+            "og:url": "https://code.org/helloworld",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://code.org/images/social-media/helloworld-og-image-1200x630.png",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "rPfiCQAAQBAJ",
-      etag: "GBsGtzDqGRA",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/rPfiCQAAQBAJ",
-      volumeInfo: {
-        title: "Hello, World! Weather",
-        authors: ["Jill McDonald"],
-        publisher: "Doubleday Books for Young Readers",
-        publishedDate: "2016-03-08",
-        description:
-          'Learn from home and explore the world with these fun and easy board books! Young children are fascinated with weather and the seasons. Here\'s a book that teaches them about different types of weather and shows them how to dress for each different day. Hello, World! is a series designed to introduce first nonfiction concepts to babies and toddlers. Told in clear and easy terms and featuring bright, cheerful illustrations, Hello, World! makes learning fun for young children. Each sturdy page offers helpful prompts for engaging with your child (“Look out the window. What is the weather like today?”) plus simple scientific facts ("Mornings are cooler than afternoons because the sun doesn’t shine overnight.") It’s a perfect way to bring science and nature into the busy world of a toddler, where learning never stops. Look for all the books in the Hello, World! series: •Solar System •Weather •Backyard Bugs •Birds •Dinosaurs •My Body •How Do Apples Grow? •Ocean Life •Moon Landing •Pets •Arctic Animals •Construction Site •Rainforest Animals •Planet Earth •Reptiles •Cars and Trucks •Music •Baby Animals •On the Farm',
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World - GitHub Docs",
+      htmlTitle: "<b>Hello World</b> - GitHub Docs",
+      link: "https://docs.github.com/en/get-started/quickstart/hello-world",
+      displayLink: "docs.github.com",
+      snippet:
+        "This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You'll create your own Hello World repository and learn ...",
+      htmlSnippet:
+        "This tutorial teaches you GitHub essentials like repositories, branches, commits, and pull requests. You&#39;ll create your own <b>Hello World</b> repository and learn&nbsp;...",
+      cacheId: "AZp1k-eTP4sJ",
+      formattedUrl:
+        "https://docs.github.com/en/get-started/quickstart/hello-world",
+      htmlFormattedUrl:
+        "https://docs.github.com/en/get-started/quickstart/<b>hello</b>-<b>world</b>",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9780553521023",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "0553521020",
-          },
-        ],
-        readingModes: {
-          text: true,
-          image: true,
-        },
-        pageCount: 24,
-        printType: "BOOK",
-        categories: ["Juvenile Nonfiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: true,
-        contentVersion: "1.10.10.0.preview.3",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=rPfiCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=rPfiCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=rPfiCQAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=4&source=gbs_api",
-        infoLink:
-          "https://play.google.com/store/books/details?id=rPfiCQAAQBAJ&source=gbs_api",
-        canonicalVolumeLink:
-          "https://play.google.com/store/books/details?id=rPfiCQAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "FOR_SALE",
-        isEbook: true,
-        listPrice: {
-          amount: 4.99,
-          currencyCode: "USD",
-        },
-        retailPrice: {
-          amount: 4.99,
-          currencyCode: "USD",
-        },
-        buyLink:
-          "https://play.google.com/store/books/details?id=rPfiCQAAQBAJ&rdid=book-rPfiCQAAQBAJ&rdot=1&source=gbs_api",
-        offers: [
-          {
-            finskyOfferType: 1,
-            listPrice: {
-              amountInMicros: 4990000,
-              currencyCode: "USD",
-            },
-            retailPrice: {
-              amountInMicros: 4990000,
-              currencyCode: "USD",
-            },
-            giftable: true,
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCwTsxFVHqKiYpNvIA-GSY8M1EYwBczxJKHBwY_QpZi-vlCiuZisBYQKI",
+            width: "225",
+            height: "225",
           },
         ],
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World_Weather-sample-epub.acsm?id=rPfiCQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        pdf: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World_Weather-sample-pdf.acsm?id=rPfiCQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=rPfiCQAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site ...",
+        metatags: [
+          {
+            "page-document-type": "article",
+            "og:image":
+              "https://github.githubassets.com/images/modules/open_graph/github-logo.png",
+            "og:type": "article",
+            "og:site_name": "GitHub Docs",
+            "og:title": "Hello World - GitHub Docs",
+            "path-article": "get-started/quickstart/hello-world",
+            "path-version": "free-pro-team@latest",
+            "path-product": "get-started",
+            "next-head-count": "30",
+            "path-language": "en",
+            viewport: "width=device-width, initial-scale=1",
+            "page-type": "quick_start",
+            "og:url":
+              "https://ghdocs-prod.azurewebsites.net/en/get-started/quickstart/hello-world",
+            status: "200",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://github.githubassets.com/images/modules/open_graph/github-logo.png",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "xwq4CgAAQBAJ",
-      etag: "4I0CqBvC+Qk",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/xwq4CgAAQBAJ",
-      volumeInfo: {
-        title: "Disney It's A Small World: Hello, World!",
-        authors: ["Disney Books"],
-        publisher: "Disney Electronic Content",
-        publishedDate: "2015-05-26",
-        description:
-          'Read along with Disney! This charming book takes children on a world tour by teaching them to say "Hello" in 10 different languages. The book includes all-new artwork that\'s colorful, modern, and inspired by Mary Blair\'s designs for the famous Disney theme parks attraction, "It\'s a Small World"!',
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title:
+        "Hello World Modern Mercantile: Online Gift Shop in Philadelphia ...",
+      htmlTitle:
+        "<b>Hello World</b> Modern Mercantile: Online Gift Shop in Philadelphia ...",
+      link: "https://shophelloworld.com/",
+      displayLink: "shophelloworld.com",
+      snippet:
+        "Hello World is one of the best online gift stores in Philadelphia. Our gift store features unique items like jewelry, handbags, totes, accessories, ...",
+      htmlSnippet:
+        "<b>Hello World</b> is one of the best online gift stores in Philadelphia. Our gift store features unique items like jewelry, handbags, totes, accessories,&nbsp;...",
+      cacheId: "nXxyhCa9L0sJ",
+      formattedUrl: "https://shophelloworld.com/",
+      htmlFormattedUrl: "https://shop<b>helloworld</b>.com/",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9781484750872",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "148475087X",
-          },
-        ],
-        readingModes: {
-          text: true,
-          image: true,
-        },
-        pageCount: 16,
-        printType: "BOOK",
-        categories: ["Juvenile Fiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: true,
-        contentVersion: "1.6.4.0.preview.3",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=xwq4CgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=xwq4CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=xwq4CgAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=5&source=gbs_api",
-        infoLink:
-          "https://play.google.com/store/books/details?id=xwq4CgAAQBAJ&source=gbs_api",
-        canonicalVolumeLink:
-          "https://play.google.com/store/books/details?id=xwq4CgAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "FOR_SALE",
-        isEbook: true,
-        listPrice: {
-          amount: 3.99,
-          currencyCode: "USD",
-        },
-        retailPrice: {
-          amount: 3.99,
-          currencyCode: "USD",
-        },
-        buyLink:
-          "https://play.google.com/store/books/details?id=xwq4CgAAQBAJ&rdid=book-xwq4CgAAQBAJ&rdot=1&source=gbs_api",
-        offers: [
-          {
-            finskyOfferType: 1,
-            listPrice: {
-              amountInMicros: 3990000,
-              currencyCode: "USD",
-            },
-            retailPrice: {
-              amountInMicros: 3990000,
-              currencyCode: "USD",
-            },
-            giftable: true,
+            src: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2OfB2FjgVn8VGEKTT-1DEdCyQFGfKOXe5J5RTUevJPZfYc4dcsFZ5DbM",
+            width: "260",
+            height: "130",
           },
         ],
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Disney_It_s_A_Small_World_Hello_World-sample-epub.acsm?id=xwq4CgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        pdf: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Disney_It_s_A_Small_World_Hello_World-sample-pdf.acsm?id=xwq4CgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=xwq4CgAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Read along with Disney! This charming book takes children on a world tour by teaching them to say &quot;Hello&quot; in 10 different languages.",
+        organization: [
+          {
+            name: "Hello World Modern Mercantile",
+            logo: "https://cdn.shopify.com/s/files/1/0043/9642/files/receiptlogo03_260x.png?v=1614333378",
+            url: "https://shophelloworld.com/",
+          },
+        ],
+        metatags: [
+          {
+            "theme-color": "#12ce8c",
+            "og:type": "website",
+            "twitter:card": "summary_large_image",
+            "twitter:title":
+              "Online Gift Shop in Philadelphia |Unique Gift Store - Hello World",
+            "og:site_name": "Hello World Modern Mercantile",
+            viewport: "width=device-width,initial-scale=1.0",
+            "twitter:description":
+              "Hello World is one of the best online gift stores in Philadelphia. Our gift store features unique items like jewelry, handbags, totes, accessories, baby gifts, candles and much more.",
+            "shopify-digital-wallet": "/439642/digital_wallets/dialog",
+            "og:title":
+              "Online Gift Shop in Philadelphia |Unique Gift Store - Hello World",
+            "shopify-checkout-api-token": "5725ca2823da741bd6feea4776d60b94",
+            "og:url": "https://shophelloworld.com/",
+            "og:description":
+              "Hello World is one of the best online gift stores in Philadelphia. Our gift store features unique items like jewelry, handbags, totes, accessories, baby gifts, candles and much more.",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://cdn.shopify.com/s/files/1/0043/9642/files/receiptlogo03_260x.png?v=1614333378",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "_dT5PQAACAAJ",
-      etag: "Dx4n/heuAFY",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/_dT5PQAACAAJ",
-      volumeInfo: {
-        title: "Hello World!",
-        subtitle: "Computer Programming for Kids and Other Beginners",
-        authors: ["Warren Sande", "Carter Sande"],
-        publisher: "Manning Publications Company",
-        publishedDate: "2009",
-        description:
-          "Presents a guide for beginners on the fundamentals of computer programming using the Python language.",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World (2019) - IMDb",
+      htmlTitle: "<b>Hello World</b> (2019) - IMDb",
+      link: "https://www.imdb.com/title/tt9418812/",
+      displayLink: "www.imdb.com",
+      snippet:
+        "Hello World: Directed by Tomohiko Itô. With Haruka Fukuhara, Minami Hamabe, Takumi Kitamura, Minako Kotobuki. A man travels in time from the year 2027 to ...",
+      htmlSnippet:
+        "<b>Hello World</b>: Directed by Tomohiko Itô. With Haruka Fukuhara, Minami Hamabe, Takumi Kitamura, Minako Kotobuki. A man travels in time from the year 2027 to&nbsp;...",
+      cacheId: "kwSES1KYF0EJ",
+      formattedUrl: "https://www.imdb.com/title/tt9418812/",
+      htmlFormattedUrl: "https://www.imdb.com/title/tt9418812/",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_10",
-            identifier: "1933988495",
-          },
-          {
-            type: "ISBN_13",
-            identifier: "9781933988498",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWx0QW1C_XYpOEV4NMKxgfOyHkCHvAKyqYie2DitO7_1-FI8fKU2z4iZe",
+            width: "189",
+            height: "267",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 406,
-        printType: "BOOK",
-        categories: ["Computers"],
-        averageRating: 5,
-        ratingsCount: 3,
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "preview-1.0.0",
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=_dT5PQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=_dT5PQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=_dT5PQAACAAJ&dq=hello+world&hl=&cd=6&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=_dT5PQAACAAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World.html?hl=&id=_dT5PQAACAAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "NO_PAGES",
-        embeddable: false,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=_dT5PQAACAAJ&hl=&source=gbs_api",
-        accessViewStatus: "NONE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Presents a guide for beginners on the fundamentals of computer programming using the Python language.",
+        metatags: [
+          {
+            "og:image":
+              "https://m.media-amazon.com/images/M/MV5BOGIwYjZlOTctZTNhOC00OTdiLWI5ZWItOTdiMWRjMjUwMDlhXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX1000_.jpg",
+            "og:type": "video.movie",
+            "og:image:width": "1000",
+            "twitter:title": "Hello World (2019) - IMDb",
+            "twitter:card": "summary_large_image",
+            "imdb:subpagetype": "main",
+            "og:site_name": "IMDb",
+            "og:title": "Hello World (2019) - IMDb",
+            "imdb:pageconst": "tt9418812",
+            "og:image:height": "1413.9150943396226",
+            "og:description":
+              "Hello World: Directed by Tomohiko Itô. With Haruka Fukuhara, Minami Hamabe, Takumi Kitamura, Minako Kotobuki. A man travels in time from the year 2027 to relive his school years and to correct a bad decision.",
+            "twitter:image":
+              "https://m.media-amazon.com/images/M/MV5BOGIwYjZlOTctZTNhOC00OTdiLWI5ZWItOTdiMWRjMjUwMDlhXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX1000_.jpg",
+            "next-head-count": "41",
+            "twitter:image:alt":
+              "Hello World: Directed by Tomohiko Itô. With Haruka Fukuhara, Minami Hamabe, Takumi Kitamura, Minako Kotobuki. A man travels in time from the year 2027 to relive his school years and to correct a bad decision.",
+            "twitter:site": "@IMDb",
+            "og:locale:alternate": "es_ES",
+            viewport: "width=device-width",
+            "twitter:description":
+              "Hello World: Directed by Tomohiko Itô. With Haruka Fukuhara, Minami Hamabe, Takumi Kitamura, Minako Kotobuki. A man travels in time from the year 2027 to relive his school years and to correct a bad decision.",
+            "og:locale": "en_US",
+            "og:url": "https://www.imdb.com/title/tt9418812/",
+            "imdb:pagetype": "title",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://m.media-amazon.com/images/M/MV5BOGIwYjZlOTctZTNhOC00OTdiLWI5ZWItOTdiMWRjMjUwMDlhXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_FMjpg_UX1000_.jpg",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "DrUlEAAAQBAJ",
-      etag: "o5eUU8Umcyc",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/DrUlEAAAQBAJ",
-      volumeInfo: {
-        title: "Hello, World! Music",
-        authors: ["Jill McDonald"],
-        publisher: "Doubleday Books for Young Readers",
-        publishedDate: "2021-01-05",
-        description:
-          "Learn from home and explore the world with these fun and easy board books! Every young child loves to listen to music, bang on drums, and pound the keys of a piano. Now here's a Hello, World! board book that can teach babies and toddlers all about musical instruments and the sounds they make—with colors, shapes, sizes, and super-simple facts. Hello, World! board books introduce first nonfiction concepts to babies and toddlers. Told in clear and easy terms with read-aloud sound words (\"Plink! There are 88 keys on a piano, and they each make a different sound\") and featuring bright, cheerful illustrations, Hello, World! makes learning fun for young children. And each page offers helpful prompts for engaging with your child. It's a perfect way to bring science and culture into the busy world of a toddler, where learning never stops. Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site • Rainforest Animals • Planet Earth • Reptiles • Cars and Trucks • Music • Baby Animals • On the Farm • Garden Time • Planes and Other Flying Machines • Rocks and Minerals • Snow",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World - MyAnimeList.net",
+      htmlTitle: "<b>Hello World</b> - MyAnimeList.net",
+      link: "https://myanimelist.net/anime/38816/Hello_World",
+      displayLink: "myanimelist.net",
+      snippet:
+        "Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and Ruri Ichigyou, a girl with a cold personality who is often ...",
+      htmlSnippet:
+        "Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and Ruri Ichigyou, a girl with a cold personality who is often&nbsp;...",
+      cacheId: "_orX8tERFz4J",
+      formattedUrl: "https://myanimelist.net/anime/38816/Hello_World",
+      htmlFormattedUrl:
+        "https://myanimelist.net/anime/38816/<b>Hello</b>_<b>World</b>",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9780593303856",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "0593303857",
+            src: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCi8ywbsQGBthEUSqlpwSXHkqM-PwvKXy-_WDZvA11LOXG-Ev60WmJYPs",
+            width: "307",
+            height: "164",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 25,
-        printType: "BOOK",
-        categories: ["Juvenile Nonfiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "preview-1.0.0",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=DrUlEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=DrUlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=DrUlEAAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=7&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=DrUlEAAAQBAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World_Music.html?hl=&id=DrUlEAAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=DrUlEAAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site ...",
+        product: [
+          {
+            image: "https://cdn.myanimelist.net/images/anime/1147/112650.jpg",
+            name: "Hello World",
+            genre: "Drama",
+            description:
+              "The year is 2027, and the city of Kyoto has undergone tremendous technological advancement. Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and...",
+          },
+        ],
+        aggregaterating: [
+          {
+            ratingvalue: "7.50",
+            ratingcount: "104097",
+            worstrating: "1",
+            bestrating: "10",
+          },
+        ],
+        metatags: [
+          {
+            "smartbanner:button-url-apple":
+              "https://myanimelist.page.link/?utm_campaign=overlay&link=https%3A%2F%2Fmyanimelist.net%2Fmal_app&apn=net.myanimelist.app&ibi=net.myanimelist&isi=1469330778&st=Download%20MyAnimeList%20App&utm_source=mal&ct=overlay&mt=8&pt=120201688",
+            "og:image":
+              "https://cdn.myanimelist.net/img/sp/icon/twitter-card.png",
+            "smartbanner:price": "GET",
+            "twitter:card": "summary",
+            "theme-color": "#2E51A2",
+            "fo-verify": "1e927243-8e02-48e3-b098-a7b78c5b4e36",
+            "smartbanner:api": "true",
+            "og:site_name": "MyAnimeList.net",
+            "smartbanner:price-suffix-google": "- On Google Play",
+            csrf_token: "6df20adf9691dbf49d839c16c467b1b4853f4889",
+            "smartbanner:hide-ttl": "2592000000",
+            "og:description":
+              "The year is 2027, and the city of Kyoto has undergone tremendous technological advancement. Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and Ruri Ichigyou, a girl with a cold personality who is often blunt with people. Despite sharing Ruri's love of reading, Naomi is afraid to approach her due to her unfriendly nature. One day, while out on a walk, Naomi witnesses a crimson aurora pierce through the sky for a brief moment before vanishing. Shortly after, he encounters a three-legged crow and a mysterious hooded man, who reveals himself to be Naomi from 10 years in the future, explaining that he has come to change an imminent tragic event that happens to Ruri soon after they start dating. Initially taking his words with a grain of salt, present-day Naomi follows his future self's instructions and starts getting closer to Ruri, determined to save her. Will he be able to change the future? [Written by MAL Rewrite]",
+            "smartbanner:author":
+              "Track your anime: anytime, anywhere<br><span class='star-fill'>★★★★</span>★",
+            "smartbanner:icon-apple":
+              "https://cdn.myanimelist.net/images/MalAppIcon_180px.png",
+            "twitter:site": "@myanimelist",
+            "smartbanner:exclude-user-agent-regex": "mal-*-app",
+            "smartbanner:disable-positioning": "true",
+            "og:type": "video.movie",
+            "smartbanner:button": "VIEW",
+            "smartbanner:button-url-google":
+              "https://myanimelist.page.link/?utm_campaign=overlay&link=https%3A%2F%2Fmyanimelist.net%2Fmal_app&apn=net.myanimelist.app&ibi=net.myanimelist&isi=1469330778&st=Download%20MyAnimeList%20App&utm_source=mal&ct=overlay&mt=8&pt=120201688",
+            "smartbanner:price-suffix-apple": "- On the App Store",
+            "og:title": "Hello World",
+            "smartbanner:enabled-platforms": "android,ios",
+            "smartbanner:title": "MyAnimeList",
+            "smartbanner:hide-path": "/",
+            "smartbanner:icon-google":
+              "https://cdn.myanimelist.net/images/MalAppIcon_180px.png",
+            "smartbanner:custom-design-modifier": "ios",
+            "twitter:image:src":
+              "https://cdn.myanimelist.net/r/360x360/img/sp/icon/twitter-card.png?s=67b1f24f7f23ca2e7fbba646cded3def",
+            "smartbanner:close-label": "Close",
+            referrer: "default",
+            "fb:app_id": "360769957454434",
+            viewport:
+              "width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,initial-scale=1.0,minimal-ui",
+            "og:locale": "en_US",
+            recaptcha_site_key: "6Ld_1aIZAAAAAF6bNdR67ICKIaeXLKlbhE7t2Qz4",
+            "og:url": "https://myanimelist.net/anime/38816/Hello_World",
+            "format-detection": "telephone=no",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://cdn.myanimelist.net/img/sp/icon/twitter-card.png",
+          },
+        ],
+        hproduct: [
+          {
+            fn: "Hello World",
+            description:
+              "The year is 2027, and the city of Kyoto has undergone tremendous technological advancement. Within the city live two classmates: Naomi Katagaki, a socially awkward and introverted boy; and...",
+            photo: "https://cdn.myanimelist.net/images/anime/1147/112650.jpg",
+          },
+        ],
+        listitem: [
+          {
+            item: "Top",
+            name: "Top",
+            position: "1",
+          },
+          {
+            item: "Anime",
+            name: "Anime",
+            position: "2",
+          },
+          {
+            item: "Hello World",
+            name: "Hello World",
+            position: "3",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "wRVHDwAAQBAJ",
-      etag: "ya4K9KECRrw",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/wRVHDwAAQBAJ",
-      volumeInfo: {
-        title: "Hello, World! Dinosaurs",
-        authors: ["Jill McDonald"],
-        publisher: "Doubleday Books for Young Readers",
-        publishedDate: "2018-02-13",
-        description:
-          "Learn from home and explore the world with these fun and easy board books! All young children love dinosaurs. Here’s a Hello, World! board book that teaches toddlers all about Triceratops, Stegosaurus, T-rex, and many more—with colors, shapes, sizes, and super-simple facts. Hello, World! is a series designed to introduce first nonfiction concepts to babies and toddlers. Told in clear and easy terms (“T. rex’s arms were very small, even though its body was large”) and featuring bright, cheerful illustrations, Hello, World! makes learning fun for young children. And each sturdy page offers helpful prompts for engaging with your child. It’s a perfect way to bring science and nature into the busy world of a toddler, where learning never stops. Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site • Rainforest Animals • Planet Earth • Reptiles • Cars and Trucks • Music • Baby Animals • On the Farm • Garden Time • Planes and Other Flying Machines • Rocks and Minerals • Snow",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: 'Express "Hello World" example',
+      htmlTitle: "Express &quot;<b>Hello World</b>&quot; example",
+      link: "https://expressjs.com/en/starter/hello-world.html",
+      displayLink: "expressjs.com",
+      snippet:
+        "Hello world example. Embedded below is essentially the simplest Express app you can create. It is a single file app — not what you'd get if you use the ...",
+      htmlSnippet:
+        "<b>Hello world</b> example. Embedded below is essentially the simplest Express app you can create. It is a single file app — not what you&#39;d get if you use the&nbsp;...",
+      cacheId: "Ag5WPLoY5PIJ",
+      formattedUrl: "https://expressjs.com/en/starter/hello-world.html",
+      htmlFormattedUrl:
+        "https://expressjs.com/en/starter/<b>hello</b>-<b>world</b>.html",
+      pagemap: {
+        cse_thumbnail: [
           {
-            type: "ISBN_13",
-            identifier: "9781524719340",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "152471934X",
+            src: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkDB2aWrpzUyql-VCFAdpHstna-_dqmQ845_hD8YjdljTeTUdoXGUFEYMo",
+            width: "374",
+            height: "135",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 26,
-        printType: "BOOK",
-        categories: ["Juvenile Nonfiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "0.1.0.0.preview.0",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=wRVHDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=wRVHDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=wRVHDwAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=8&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=wRVHDwAAQBAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World_Dinosaurs.html?hl=&id=wRVHDwAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=wRVHDwAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Look for all the books in the Hello, World! series: • Solar System • Weather • Backyard Bugs • Birds • Dinosaurs • My Body • How Do Apples Grow? • Ocean Life • Moon Landing • Pets • Arctic Animals • Construction Site ...",
+        metatags: [
+          {
+            "og:image":
+              "https://expressjs.com/images/express-facebook-share.png",
+            viewport: "width=device-width, initial-scale=1",
+          },
+        ],
+        cse_image: [
+          {
+            src: "https://expressjs.com/images/express-facebook-share.png",
+          },
+        ],
       },
     },
     {
-      kind: "books#volume",
-      id: "_lGIjwEACAAJ",
-      etag: "vJhGw64Z09k",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/_lGIjwEACAAJ",
-      volumeInfo: {
-        title: "Hello World",
-        authors: ["Jonathan Litton"],
-        publishedDate: "2016-04",
-        description: "No Marketing Blurb",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "hello-world - Official Image | Docker Hub",
+      htmlTitle: "<b>hello</b>-<b>world</b> - Official Image | Docker Hub",
+      link: "https://hub.docker.com/_/hello-world",
+      displayLink: "hub.docker.com",
+      snippet:
+        "hello-world. Docker Official Image. •. 1B+. •. 2.0K. Hello World! (an example of minimal Dockerization). docker pull hello-world.",
+      htmlSnippet:
+        "<b>hello</b>-<b>world</b>. Docker Official Image. •. 1B+. •. 2.0K. <b>Hello World</b>! (an example of minimal Dockerization). docker pull <b>hello</b>-<b>world</b>.",
+      cacheId: "tEhWFJYWINkJ",
+      formattedUrl: "https://hub.docker.com/_/hello-world",
+      htmlFormattedUrl: "https://hub.docker.com/_/<b>hello</b>-<b>world</b>",
+      pagemap: {
+        metatags: [
           {
-            type: "ISBN_10",
-            identifier: "1848575033",
-          },
-          {
-            type: "ISBN_13",
-            identifier: "9781848575035",
+            viewport:
+              "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",
           },
         ],
-        readingModes: {
-          text: false,
-          image: false,
-        },
-        pageCount: 16,
-        printType: "BOOK",
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: false,
-        contentVersion: "preview-1.0.0",
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=_lGIjwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=_lGIjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=_lGIjwEACAAJ&dq=hello+world&hl=&cd=9&source=gbs_api",
-        infoLink:
-          "http://books.google.com/books?id=_lGIjwEACAAJ&dq=hello+world&hl=&source=gbs_api",
-        canonicalVolumeLink:
-          "https://books.google.com/books/about/Hello_World.html?hl=&id=_lGIjwEACAAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "NOT_FOR_SALE",
-        isEbook: false,
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "NO_PAGES",
-        embeddable: false,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: false,
-        },
-        pdf: {
-          isAvailable: false,
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=_lGIjwEACAAJ&hl=&source=gbs_api",
-        accessViewStatus: "NONE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "With over 150 languages, flaps to reveal pronunciation andfact-files explaining how to write &#39;hi&#39; in hieroglyphs and how to sign &#39;hao&#39; inNative American hand talk. Hello Worldopens up a world of exploration and greetings at your fingertips.",
       },
     },
     {
-      kind: "books#volume",
-      id: "JsZBDAAAQBAJ",
-      etag: "/7PIhog2zn8",
-      selfLink: "https://www.googleapis.com/books/v1/volumes/JsZBDAAAQBAJ",
-      volumeInfo: {
-        title: "Hello, World! Backyard Bugs",
-        authors: ["Jill McDonald"],
-        publisher: "Doubleday Books for Young Readers",
-        publishedDate: "2017-02-14",
-        description:
-          "Hello, World! is a series designed to help parents introduce simple nonfiction concepts to their babies and toddlers. Now even the youngest children can enjoy learning about the world around them! Told in simple terms and accompanied by bright, cheerful illustrations, Hello, World! makes learning easy for young children and offers useful prompts to the adult reader in order to help them engage with their child on each page. Every young child loves to look at bugs. Now they can learn all about the insects in their backyards—with colors, sounds, sizes, and super-simple facts (“Chomp! A bright red ladybug munches on a leaf. Point to each of its spots.”). It’s a perfect way to bring the outside world of natural science into the busy world of a toddler, where learning never stops.",
-        industryIdentifiers: [
+      kind: "customsearch#result",
+      title: "Hello World – Your partner in technology",
+      htmlTitle: "<b>Hello World</b> – Your partner in technology",
+      link: "https://helloworlddevs.com/",
+      displayLink: "helloworlddevs.com",
+      snippet:
+        "Hello World isn't just a phenomenal agency with deep technical expertise. They also understand organizations and people—how our website fits into the larger ...",
+      htmlSnippet:
+        "<b>Hello World</b> isn&#39;t just a phenomenal agency with deep technical expertise. They also understand organizations and people—how our website fits into the larger&nbsp;...",
+      cacheId: "A3bJ6Wne_XIJ",
+      formattedUrl: "https://helloworlddevs.com/",
+      htmlFormattedUrl: "https://<b>helloworld</b>devs.com/",
+      pagemap: {
+        metatags: [
           {
-            type: "ISBN_13",
-            identifier: "9780553521061",
-          },
-          {
-            type: "ISBN_10",
-            identifier: "0553521063",
-          },
-        ],
-        readingModes: {
-          text: true,
-          image: true,
-        },
-        pageCount: 14,
-        printType: "BOOK",
-        categories: ["Juvenile Nonfiction"],
-        maturityRating: "NOT_MATURE",
-        allowAnonLogging: true,
-        contentVersion: "1.4.3.0.preview.3",
-        panelizationSummary: {
-          containsEpubBubbles: false,
-          containsImageBubbles: false,
-        },
-        imageLinks: {
-          smallThumbnail:
-            "http://books.google.com/books/content?id=JsZBDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          thumbnail:
-            "http://books.google.com/books/content?id=JsZBDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-        },
-        language: "en",
-        previewLink:
-          "http://books.google.com/books?id=JsZBDAAAQBAJ&printsec=frontcover&dq=hello+world&hl=&cd=10&source=gbs_api",
-        infoLink:
-          "https://play.google.com/store/books/details?id=JsZBDAAAQBAJ&source=gbs_api",
-        canonicalVolumeLink:
-          "https://play.google.com/store/books/details?id=JsZBDAAAQBAJ",
-      },
-      saleInfo: {
-        country: "US",
-        saleability: "FOR_SALE",
-        isEbook: true,
-        listPrice: {
-          amount: 5.99,
-          currencyCode: "USD",
-        },
-        retailPrice: {
-          amount: 5.99,
-          currencyCode: "USD",
-        },
-        buyLink:
-          "https://play.google.com/store/books/details?id=JsZBDAAAQBAJ&rdid=book-JsZBDAAAQBAJ&rdot=1&source=gbs_api",
-        offers: [
-          {
-            finskyOfferType: 1,
-            listPrice: {
-              amountInMicros: 5990000,
-              currencyCode: "USD",
-            },
-            retailPrice: {
-              amountInMicros: 5990000,
-              currencyCode: "USD",
-            },
-            giftable: true,
+            viewport: "width=device-width, initial-scale=1.0",
+            "msapplication-tileimage":
+              "https://helloworlddevs.com/wp-content/uploads/2022/10/logo-right.png",
           },
         ],
-      },
-      accessInfo: {
-        country: "US",
-        viewability: "PARTIAL",
-        embeddable: true,
-        publicDomain: false,
-        textToSpeechPermission: "ALLOWED",
-        epub: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World_Backyard_Bugs-sample-epub.acsm?id=JsZBDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        pdf: {
-          isAvailable: true,
-          acsTokenLink:
-            "http://books.google.com/books/download/Hello_World_Backyard_Bugs-sample-pdf.acsm?id=JsZBDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api",
-        },
-        webReaderLink:
-          "http://play.google.com/books/reader?id=JsZBDAAAQBAJ&hl=&source=gbs_api",
-        accessViewStatus: "SAMPLE",
-        quoteSharingAllowed: false,
-      },
-      searchInfo: {
-        textSnippet:
-          "Hello, World! is a series designed to help parents introduce simple nonfiction concepts to their babies and toddlers.",
       },
     },
   ],
